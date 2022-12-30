@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="COMSOL Multiphysics model report" />
+    <meta name="keywords" content="comsol multiphysics model report" />
+    <!-- saved from url=(0014)about:internet -->
+    <title>simulation</title>
+    <link rel="stylesheet" href="simulation_files/report.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div>
+      <a href="https://www.comsol.com">
+        <img src="simulation_files/logo.png" width="159" height="34" style="float:right;border:none" />
+      </a>
+    </div>
+    <div class="ReportTitle" id="cs6706046">
+       <span>Simulation</span>
+    </div>
+    <h4 id="cs4952369">
+       <span>Report date</span>
+    </h4>
+    <p>
+      <a name="cs6283822">
+         <span>Dec 30, 2022, 12:44:04 PM</span>
+      </a>
+    </p>
+    <div class="TocHeading">
+       <span>Contents</span>
+    </div>
+    <table style="border:0px;">
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs7183972">
+             <span>Global Definitions</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs7856681">
+             <span>Component 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs3790702">
+             <span>Definitions</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs1432348">
+             <span>Geometry 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs3575458">
+             <span>Materials</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.4.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs2309896">
+             <span>Solid Mechanics</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>2.5.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs5625876">
+             <span>Mesh 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs8398672">
+             <span>Study 1</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>3.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs1028423">
+             <span>Stationary</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;font-weight:bold">
+           <span>4.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;font-weight:bold" colspan="5">
+          <a href="#cs2389836">
+             <span>Results</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.1.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs8748549">
+             <span>Datasets</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.2.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs6836971">
+             <span>Tables</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:0px;">
+           <span>4.3.</span>
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;padding-left:10pt">
+        </td>
+        <td style="border:0px;" colspan="4">
+          <a href="#cs8044868">
+             <span>Plot Groups</span>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs3576409">
+      <a name="cs7183972">
+         <span>1. Global Definitions</span>
+      </a>
+    </h2>
+    <table border="1">
+      <tr>
+        <td>
+           <span>Date</span>
+        </td>
+        <td>
+           <span>Dec 29, 2022, 11:55:03 PM</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs8376616">
+           <span>Global settings</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Name</span>
+        </td>
+        <td>
+           <span>Simulation.mph</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Version</span>
+        </td>
+        <td>
+           <span>COMSOL Multiphysics 6.1 (Build: 282)</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6075404">
+           <span>Used products</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>COMSOL Multiphysics</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>CAD Import Module</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs5158981">
+           <span>Computer information</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>CPU</span>
+        </td>
+        <td>
+           <span>Intel64 Family 6 Model 158 Stepping 9, 4 cores, 15.96 GB RAM</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Operating system</span>
+        </td>
+        <td>
+           <span>Windows 10</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs7633888">
+      <a name="cs7856681">
+         <span>2. Component 1</span>
+      </a>
+    </h2>
+    <h3 id="cs5481205">
+      <a name="cs3790702">
+         <span>2.1. Definitions</span>
+      </a>
+    </h3>
+    <h4 id="cs5538588">
+      <a name="cs6597346">
+         <span>2.1.1. Coordinate Systems</span>
+      </a>
+    </h4>
+    <h5 id="cs3778394">
+      <a name="cs3457731">
+         <span>Boundary System 1</span>
+      </a>
+    </h5>
+    <table border="1">
+      <tr>
+        <td>
+           <span>Coordinate system type</span>
+        </td>
+        <td>
+           <span>Boundary system</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Tag</span>
+        </td>
+        <td>
+           <span>sys1</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs6600598">
+           <span>Coordinate names</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>First</span>
+        </th>
+        <th>
+           <span>Second</span>
+        </th>
+        <th>
+           <span>Third</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>t1</span>
+        </td>
+        <td>
+           <span>t2</span>
+        </td>
+        <td>
+           <span>n</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs7882331">
+      <a name="cs1432348">
+         <span>2.2. Geometry 1</span>
+      </a>
+    </h3>
+    <p>
+      <img src="simulation_files/geom_geom1_view1.png" alt="geom_geom1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs1864178">
+         <span>Geometry 1</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs8801582">
+           <span>Units</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Length unit</span>
+        </td>
+        <td>
+           <span>mm</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Angular unit</span>
+        </td>
+        <td>
+           <span>deg</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs6498363">
+      <a name="cs3575458">
+         <span>2.3. Materials</span>
+      </a>
+    </h3>
+    <h4 id="cs6257525">
+      <a name="cs8618428">
+         <span>2.3.1. Structural steel</span>
+      </a>
+    </h4>
+    <p>
+      <img src="simulation_files/mat_mat1_view1.png" alt="mat_mat1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs5599322">
+         <span>Structural steel</span>
+      </a>
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs2486836">
+           <span>Selection</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Geometric entity level</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Selection</span>
+        </td>
+        <td>
+           <span>Geometry geom1: Dimension 3: Domain 1</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs2927159">
+      <a name="cs2309896">
+         <span>2.4. Solid Mechanics</span>
+      </a>
+    </h3>
+    <p>
+      <img src="simulation_files/phys_solid_view1.png" alt="phys_solid_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs3912466">
+         <span>Solid Mechanics</span>
+      </a>
+    </p>
+    <div class="TableHeading" id="cs2517705">
+       <span>Equations</span>
+    </div>
+    <p>
+      <img src="simulation_files/equ_solid.png" alt="equ_solid.png" width="83" height="13" style="padding-left:18pt;border:none" />
+    </p>
+    <table border="1">
+      <caption>
+        <a name="cs3754180">
+           <span>Features</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Name</span>
+        </th>
+        <th>
+           <span>Level</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Linear Elastic Material 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Free 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Initial Values 1</span>
+        </td>
+        <td>
+           <span>Domain</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Boundary Load 1</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Fixed Constraint 2</span>
+        </td>
+        <td>
+           <span>Boundary</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs9070721">
+      <a name="cs5625876">
+         <span>2.5. Mesh 1</span>
+      </a>
+    </h3>
+    <p>
+      <img src="simulation_files/mesh_mesh1_view1.png" alt="mesh_mesh1_view1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs7395673">
+         <span>Mesh 1</span>
+      </a>
+    </p>
+    <h2 id="cs3959330">
+      <a name="cs8398672">
+         <span>3. Study 1</span>
+      </a>
+    </h2>
+    <table border="1">
+      <caption>
+        <a name="cs8388175">
+           <span>Computation information</span>
+        </a>
+      </caption>
+      <tr>
+        <td>
+           <span>Computation time</span>
+        </td>
+        <td>
+           <span>7 s</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs2335404">
+      <a name="cs1028423">
+         <span>3.1. Stationary</span>
+      </a>
+    </h3>
+    <table border="1">
+      <caption>
+        <a name="cs2780991">
+           <span>Study settings</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Include geometric nonlinearity</span>
+        </td>
+        <td>
+           <span>Off</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs7841912">
+           <span>Physics and variables selection</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Physics interface</span>
+        </th>
+        <th>
+           <span>Solve for</span>
+        </th>
+        <th>
+           <span>Equation form</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Solid Mechanics (solid)</span>
+        </td>
+        <td>
+           <span>On</span>
+        </td>
+        <td>
+           <span>Automatic (Stationary)</span>
+        </td>
+      </tr>
+    </table>
+    <table border="1">
+      <caption>
+        <a name="cs9098828">
+           <span>Mesh selection</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Component</span>
+        </th>
+        <th>
+           <span>Mesh</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Component 1</span>
+        </td>
+        <td>
+           <span>Mesh 1</span>
+        </td>
+      </tr>
+    </table>
+    <h2 id="cs4871150">
+      <a name="cs2389836">
+         <span>4. Results</span>
+      </a>
+    </h2>
+    <h3 id="cs3696029">
+      <a name="cs8748549">
+         <span>4.1. Datasets</span>
+      </a>
+    </h3>
+    <h4 id="cs2628349">
+      <a name="cs9688770">
+         <span>4.1.1. Study 1/Solution 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs4511453">
+           <span>Solution</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Solution</span>
+        </td>
+        <td>
+           <span>Solution 1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Component</span>
+        </td>
+        <td>
+           <span>Component 1 (comp1)</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="simulation_files/dset_dset1.png" alt="dset_dset1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs8739923">
+         <span>Dataset: Study 1/Solution 1</span>
+      </a>
+    </p>
+    <h4 id="cs3917857">
+      <a name="cs6197784">
+         <span>4.1.2. Study 1/Adaptive Mesh Refinement Solutions 1</span>
+      </a>
+    </h4>
+    <table border="1">
+      <caption>
+        <a name="cs1066939">
+           <span>Solution</span>
+        </a>
+      </caption>
+      <tr>
+        <th>
+           <span>Description</span>
+        </th>
+        <th>
+           <span>Value</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>Solution</span>
+        </td>
+        <td>
+           <span>Adaptive Mesh Refinement Solutions 1</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+           <span>Component</span>
+        </td>
+        <td>
+           <span>Component 1 (comp1)</span>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <img src="simulation_files/dset_dset2.png" alt="dset_dset2.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs8540106">
+         <span>Dataset: Study 1/Adaptive Mesh Refinement Solutions 1</span>
+      </a>
+    </p>
+    <h3 id="cs5294917">
+      <a name="cs6836971">
+         <span>4.2. Tables</span>
+      </a>
+    </h3>
+    <h4 id="cs1631723">
+      <a name="cs2238339">
+         <span>4.2.1. Maximum and Minimum Values</span>
+      </a>
+    </h4>
+    <p>
+      <a name="cs3834513">
+         <span>Max/min point</span>
+      </a>
+    </p>
+    <table border="1">
+      <tr>
+        <th>
+           <span>X</span>
+        </th>
+        <th>
+           <span>Y</span>
+        </th>
+        <th>
+           <span>Z</span>
+        </th>
+        <th>
+           <span>von Mises stress (MPa)</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>115.32</span>
+        </td>
+        <td>
+           <span>105.93</span>
+        </td>
+        <td>
+           <span>-1529</span>
+        </td>
+        <td>
+           <span>132.54</span>
+        </td>
+      </tr>
+    </table>
+    <h4 id="cs1014236">
+      <a name="cs9224822">
+         <span>4.2.2. Maximum and Minimum Values 1</span>
+      </a>
+    </h4>
+    <p>
+      <a name="cs9412872">
+         <span>Max/min point</span>
+      </a>
+    </p>
+    <table border="1">
+      <tr>
+        <th>
+           <span>X</span>
+        </th>
+        <th>
+           <span>Y</span>
+        </th>
+        <th>
+           <span>Z</span>
+        </th>
+        <th>
+           <span>von Mises stress (MPa)</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+           <span>112</span>
+        </td>
+        <td>
+           <span>112.03</span>
+        </td>
+        <td>
+           <span>-1514.5</span>
+        </td>
+        <td>
+           <span>481.42</span>
+        </td>
+      </tr>
+    </table>
+    <h3 id="cs5254154">
+      <a name="cs8044868">
+         <span>4.3. Plot Groups</span>
+      </a>
+    </h3>
+    <h4 id="cs8307354">
+      <a name="cs5772011">
+         <span>4.3.1. Stress (solid)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="simulation_files/pg_pg1.png" alt="pg_pg1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs2874528">
+         <span>Volume: von Mises stress (MPa) Max/Min Point: von Mises stress (MPa)</span>
+      </a>
+    </p>
+    <h4 id="cs5582235">
+      <a name="cs3598701">
+         <span>4.3.2. Stress (solid)</span>
+      </a>
+    </h4>
+    <p>
+      <img src="simulation_files/pg_pg1.png" alt="pg_pg1.png" width="480" height="360" />
+    </p>
+    <p style="font-style:italic">
+      <a name="cs9058779">
+         <span>Volume: von Mises stress (MPa) Max/Min Point: von Mises stress (MPa)</span>
+      </a>
+    </p>
+  </body>
+</html>
