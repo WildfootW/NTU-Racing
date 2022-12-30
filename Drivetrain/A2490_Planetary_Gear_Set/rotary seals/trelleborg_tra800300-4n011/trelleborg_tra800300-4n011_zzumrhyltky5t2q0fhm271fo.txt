@@ -1,0 +1,14 @@
+﻿"Symbol";"Value";"Unit";
+"REFERENCE";"TRA800300-4N011";"";
+"TraceParts.PartVersion";"1.4.9";"";
+"SUPPLIER";"Trelleborg Sealing Solutions";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartNumber";"69-15022006-077333";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"Rotary Seals";"";
+"TraceParts.InstanceId";"69-15022006-0773339C02ITW01DSKJKKCVRJ6TGLCL";"";
+"TraceParts.PartTitle";"Radial Oil Seal Type A DIN 3760 TSS Type TRA";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"SELECTION";"Radial Oil Seal Type A DIN 3760 TSS Type TRA";"";
+"TraceParts.ClassPath";"TRELLEBORG:69-15022006-077333";"";
